@@ -1,0 +1,566 @@
+ .Avengers-home-background{
+    background-image:url('https://res.cloudinary.com/dm1x64qdl/image/upload/v1747988587/Group_7390_bmmu3g.png');
+    background-size:cover;
+    
+    height: 100vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); ;
+} 
+#menu-toggle {
+  display: none;
+}
+.background-blur-effect{
+    backdrop-filter: blur(18px);
+    background-color: rgb(219, 207, 207);
+    height: 300px;
+    width: auto;
+   
+}
+
+/* Hamburger icon styling */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+/* Default menu hidden */
+.menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  width: 100%;
+   top: 50px;
+   left: 0;
+  
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+.nav-item{
+    color:#ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left:10px;
+}
+.Avengers-home-header{
+    background-color:rgba(0,0,0,0.4);
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    
+}
+.Avengers-home-header-show{
+    display: none;
+}
+.Avengers-home-header-links{
+    display: none;
+}
+.Avengers-home-header-icons{
+    display:flex;
+    align-items:center;
+}
+.search-icon{
+    color:#ffffff;
+    font-size:18px;
+    margin-right:8px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-left: 8px;
+    
+}
+.hamburger-icon{
+    color:#ffffff;
+    font-size:20px;
+    margin-left:10px;
+}
+.Avengers-home-heading{
+    color:#E50014;
+    font-size:24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+
+}
+
+.Avengers-play-button{
+    background-color: #ffffff;
+    color: #000000;
+    height:30px;
+    width:60px;
+    text-align: center;
+    border: none;
+    
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+   }
+   
+   .footer{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .footer-icon{
+    color: #ffffff;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
+   }
+   .contact-us{
+    color: #ffffff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+   }
+   .Avengers-container{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; */
+        /* height:100vh;  */
+        /* margin-left: 20px;
+        margin-top: 50px;  
+        backdrop-filter: blur(5px); */
+        margin-top:10%;
+        margin-left: 15%;
+        backdrop-filter: blur(4px); 
+        width:80%;
+    }
+   .Avenger-heading{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+   
+   }
+   .avengers-time-container{
+    display: flex;
+    margin-top:20px;
+    
+   }
+   .movie-run-time{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    
+   
+    opacity: 0.7;
+   }
+   .ua-button{
+    background-color: transparent;
+    color: #ffffff;
+    height: 20px;
+    width: 40px;
+    font-weight:bolder;
+    text-align: center;
+    border: solid 1px #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+   }
+   .year-value{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    opacity: 0.7;
+    margin-left: 10px;
+   }
+   .description-long{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+    opacity: 0.7;
+    width: auto;
+    
+   }
+     .movies-details-background{
+        background-color:#000000;
+        padding-bottom:50px;
+        width:100%;
+    
+   }
+  
+   .movies-details-container{
+     display: flex;
+     flex-wrap: wrap;
+    
+   }
+   .movie-details-text-container{
+    margin-left: 8px;
+   }
+     .movie-details-heading{
+        color:rgb(34, 34, 124);
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-left: 12px;
+        padding-top:10px;
+       }
+    .movie-details-sub-heading{
+        color: #ffffff;
+        font-size: 8px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        margin-left: 12px;
+        margin-top:3px;
+        opacity: 0.7;
+
+    }
+    .movirs-detaiks-container{
+        margin-top: 30px;
+    }
+    .more-like-heading{
+        color:#ffffff;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .more-like-images-container{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+
+    .more-like-images{
+        height:60px;
+        width:80px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    .linking-underline{
+    text-decoration: none;
+}
+
+
+
+
+ @media (min-width: 700px) {
+    /* .Avengers-home-background-show{
+        background-image:url('https://res.cloudinary.com/dm1x64qdl/image/upload/v1747816965/418e5ab72e7c52e74cd14b44129a625a520a8448_p7egmm.jpg');
+        background-size:cover;
+        height: 100vh;
+        width:100%;
+        background-position:center;
+        background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+       
+
+    } */
+    .Avengers-home-header-show{
+    display: block;
+   }
+    #menu-toggle {
+    display: none;
+    }
+
+    /* Hamburger icon styling */
+    .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    }
+
+    /* Default menu hidden */
+    .menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    
+    }
+
+    .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+    }
+    .nav-item{
+        color:#ffffff;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        cursor: pointer;
+        margin-left:10px;
+    }
+    .Avengers-home-header{
+        display:none;
+    }
+    .Avengers-home-width{
+        min-width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    .Avengers-home-logo-container-show{
+        display: flex;
+        align-items: center;
+        margin-left: 180px;
+
+    }
+    .Avengers-home-header-show{
+        background-color:rgba(0,0,0,0.4);
+        height:60px;
+        display:flex;
+        padding:0 20px;
+
+    }
+    .Avengers-home-header-links-show{
+        display: flex;
+        margin-left: 18px;
+    }
+    .Avengers-home-heading-show{
+         color:#E50014;
+        font-size:24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+    .Avengers-nav-elements-show{
+        color:#ffffff;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .Avengers-search-icon-show{
+        color: #ffffff;
+        font-size: 18px;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+    .Avengers-home-header-icons-show{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .Avengers-image-container{
+        background-color:#Ffffff;
+        height:30px;
+        width:30px;
+        border-style: solid;
+        border-width:0px;
+        border-radius: 50%;
+        margin-left:20px;
+        cursor: pointer;
+    }
+    .Avengers-image{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        
+    }
+    
+    .Avengers-play-button{
+        background-color: #ffffff;
+        color: #000000;
+        height:60px;
+        width:120px;
+        text-align: center;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+      .footer{
+        margin-top:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   .footer-icon{
+    color: #ffffff;
+    font-size: 24px;
+    margin: 18px;
+    cursor: pointer;
+   }
+   .contact-us{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 18px;
+    cursor: pointer;
+    text-align: center;
+   }
+   .Avengers-container{
+       margin-top:10%;
+         margin-left: 15%;
+         width:60%;
+    backdrop-filter: blur(1px);
+        
+       
+    }
+   .Avenger-heading{
+    color: #ffffff;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+   
+   }
+   .avengers-time-container{
+    display: flex;
+    margin-top:25px;
+    
+   }
+   .movie-run-time{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    
+   
+    opacity: 0.7;
+   }
+   .ua-button{
+    background-color: transparent;
+    color: #ffffff;
+    height: 30px;
+    width: 60px;
+    font-weight:bolder;
+    text-align: center;
+    border: solid 1px #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+   }
+   .year-value{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    opacity: 0.7;
+    margin-left: 20px;
+   }
+   .description-long{
+    color: #ffffff;
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin-top: 30px;
+    opacity: 0.7;
+    max-width: 50%;
+    
+   }
+   .movies-details-background{
+    background-color:#000000;
+    padding-bottom:50px;
+    width:100%;
+    
+   }
+   .movies-details-container{
+    background-color:#000000;
+    padding-bottom:50px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+    
+   }
+   
+     .movie-details-heading{
+        color:rgb(34, 34, 124);
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        
+        padding-top:30px;
+       }
+    .movie-details-sub-heading{
+        color: #ffffff;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        
+        margin-top:10px;
+        opacity: 0.7;
+
+    }
+    
+    .movirs-detaiks-container{
+        margin-top: 50px;
+    }
+    .more-like-heading{
+        color:#ffffff;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-left: 30px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .more-like-images-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+       
+    }
+
+    .more-like-images{
+        height:250px;
+        width:200px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+
+ 
+
+
+   
+  
+ }

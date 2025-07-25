@@ -1,0 +1,16 @@
+
+
+.movie-poster {
+    width:60px;
+    height: 60px;
+    margin:10px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .movie-poster {
+        width: 250px;
+        height: 300px;
+        margin: 20px;
+        cursor: pointer;
+    }
+}

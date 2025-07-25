@@ -1,0 +1,27 @@
+
+.error-container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    width:100vw;
+    background-color: black;
+  
+}
+
+.try-btn-container{
+    text-align: center;
+}
+.try-button{
+    background-color: #181818;
+    color:#ffffff;
+
+}
+.something-went-wrong{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}

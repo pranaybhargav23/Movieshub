@@ -1,0 +1,60 @@
+/* src/components/Footer.css */
+
+.footers-container {
+  background-color: #040000;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  
+ 
+}
+
+.footer-icon {
+  font-size: 28px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  color: #00bfff;
+}
+
+.contact-us {
+  font-size: 18px;
+  font-weight: 500;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ✅ Mobile-first Responsive */
+@media (max-width: 600px) {
+  .footer-icon {
+    font-size: 24px;
+  }
+
+  .contact-us {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Tablet & above */
+@media (min-width: 768px) {
+  .footer {
+    gap: 20px;
+  }
+
+  .footer-icon {
+    font-size: 32px;
+  }
+
+  .contact-us {
+    font-size: 20px;
+  }
+}

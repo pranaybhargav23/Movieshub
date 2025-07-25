@@ -1,0 +1,199 @@
+.search-background{
+    background-color: black;
+    height:auto;
+    width:100vw;
+
+}
+.nav-links-container1{
+    display: none;
+}
+
+.header-conatiner1{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding:10px;
+    
+}
+.logo-heading{
+    height:60px ;
+    width:150px;
+    
+    padding:8px;
+}
+.logo-container{
+         padding:8px;
+        margin-left:30%;
+        margin-right:5%;
+}
+.search-icon{
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.hamburger-menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+     
+    
+   
+}
+.hamburger-menu-icon2{
+    display: none;
+     
+  }
+.seach-cont{
+    display: flex;
+    justify-content: center;
+    margin-left: 12%;
+}
+.search-input{
+    border-style: solid;
+    border-width:0px;
+    border-color:#ffffff;
+    border-radius: 6px;
+    width:120px;
+    height:20px;
+    padding:8px;
+    
+
+}
+.search-movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    
+}
+.image-container{
+    display:none;
+}
+.linking-underline{
+    text-decoration: none;
+    color: #ffffff;
+}
+.no-movies-found{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.highlighting{
+    color:#E50014;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.something-went-wrong{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.try-btn-container{
+    text-align: center;
+}
+.try-button{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    background-color: black;
+}
+ .loading-view-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        width:100vw;
+    }
+
+@media screen and (min-width: 768px) {
+    .header-conatiner1{
+        display: flex;
+        width:80%;
+    }
+    
+    .logo-heading{
+        color:#E50014;
+        font-size:24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        
+        cursor: pointer;
+    } 
+    
+    .search-input{
+        border-style: solid;
+        border-width:0px;
+        border-color:#ffffff;
+        border-radius: 6px;
+        width:280px;
+        height:30px;
+        padding:8px;
+        margin-right:20px;
+        
+
+    }
+    .nav-links-container1{
+        display: flex;
+        
+        
+    }
+    .home{
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        margin-right:30px;
+        cursor: pointer;
+    }
+    .hamburger-menu-icon{
+        display: none;
+    }
+     .hamburger-menu-icon2{
+        display: block;
+        font-size: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+        color:#ffffff
+    }
+/*     
+    .image-container{
+        background-color:#Ffffff;
+        height:30px;
+        width:30px;
+        border-style: solid;
+        border-width:0px;
+        border-radius: 50%;
+       
+    }
+    .image{
+        width: 30px;
+        height: 30px;
+        text-align: right;
+        
+    } */
+    .search-movies-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding:30px;
+        justify-content: center;
+    }
+
+
+}  

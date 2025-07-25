@@ -1,0 +1,128 @@
+.movies-logo{
+    height:50px;
+    width:160px;
+    margin-left:50px;
+}
+.background{
+    background-color:rgb(19, 14, 14);
+    opacity: 1.0;
+    height:100vh;
+    width:100vw;
+    padding:22px;
+
+}
+.movies-heading{
+    color:#E50014;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.login-form{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin-top:50px;
+    
+} 
+.login-heading{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+.input-container{
+    margin-bottom: 20px;
+}
+.user-name{
+    color:#ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custom-input {
+  width: 100%;
+  background-color:#333333;
+  padding-left: 12px;     /* px-3 */
+  padding-right: 12px;
+  padding-top: 12px;      /* py-3 */
+  padding-bottom: 12px;
+  margin-top: 12px; 
+    /* mt-3 */
+  /* border:  solid #D1D5DB;  */
+ border-style:solid;
+  border-width: 0px;
+  color:#ffffff;
+}
+.signin-button{
+    background-color: #E50914;
+    margin-top:8px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    height:32px;
+   width:100%;
+   border-width:0px;
+    border: none;
+    cursor: pointer;
+}
+.error-msg{
+    color:red;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .background {
+        background-image: url('https://res.cloudinary.com/dm1x64qdl/image/upload/v1747757910/8ccaf66f19edc15e3aa6b6a1301fd6667bf2509e_5_ofyimu.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+  
+    .login-form {
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 8px;
+        
+    }
+        .custom-input {
+        width: 100%;
+        background-color:#333333;
+        padding-left: 12px;     /* px-3 */
+        padding-right: 12px;
+        padding-top: 12px;      /* py-3 */
+        padding-bottom: 12px;
+        margin-top: 12px; 
+            /* mt-3 */
+        /* border:  solid #D1D5DB;  */
+        border-style:solid;
+        border-width: 0px;
+        color:#ffffff;
+    }
+    .login-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }   
+    .login-heading{
+        color: #ffffff;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 26px;
+        text-align: center;
+   }  
+    .signin-button{
+        margin-bottom:12px;
+    } 
+
+        
+}
