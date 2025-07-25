@@ -1,4 +1,3 @@
-
 import {
   FaSearch,
   FaGoogle,
@@ -25,7 +24,7 @@ const Avengers = () => {
   const [genre, setGenres] = useState([]);
   const [language, setLanguage] = useState([]);
   const [images, setImages] = useState([]);
- 
+
   const jwtToken = Cookies.get("jwt_token");
   if (jwtToken === undefined) {
     return <Navigate to="/Login" />;
@@ -34,9 +33,8 @@ const Avengers = () => {
   const { movieId } = useParams();
 
   const onPlayVideo = (ids) => {
-    
     navigate(`/trailer/${ids}`, { replace: true });
-  }
+  };
 
   useEffect(() => {
     const fetchingCurrentImage = async () => {
@@ -76,8 +74,6 @@ const Avengers = () => {
 
     fetchingCurrentImage();
   }, []);
-  
- 
 
   return (
     <>
@@ -146,28 +142,26 @@ const Avengers = () => {
             </div>
             </div>    */}
           <Header />
-          
-            <div className="Avengers-container">
-              <h1 className="Avenger-heading">{movieData.title}</h1>
 
-              <div className="avengers-time-container">
-                <p className="movie-run-time">2h 42m</p>
-                <button className="ua-button">U/A</button>
-                <p className="year-value">2007</p>
-              </div>
-              <p className="description-long"> {movieData.overview}</p>
-              <div>
-                
-                <button
-                  className="Avengers-play-button"
-                  onClick={() => onPlayVideo(movieData.id)}
-                >
-                  Play
-                </button>
-              </div>
+          <div className="Avengers-container">
+            <h1 className="Avenger-heading">{movieData.title}</h1>
+
+            <div className="avengers-time-container">
+              <p className="movie-run-time">2h 42m</p>
+              <button className="ua-button">U/A</button>
+              <p className="year-value">2007</p>
+            </div>
+            <p className="description-long"> {movieData.overview}</p>
+            <div>
+              <button
+                className="Avengers-play-button"
+                onClick={() => onPlayVideo(movieData.id)}
+              >
+                Play
+              </button>
             </div>
           </div>
-        
+        </div>
       </Wrapper>
 
       <div className="movies-details-background">
@@ -195,6 +189,7 @@ const Avengers = () => {
             <p className="movie-details-sub-heading">
               {movieData.votingAverage}
             </p>
+            <p></p>
           </div>
           <div className="movie-details-text-container">
             <h2 className="movie-details-heading">Budget</h2>
@@ -226,10 +221,9 @@ const Avengers = () => {
               src="https://res.cloudinary.com/dm1x64qdl/image/upload/v1748238454/3f91b246769910a4b74409aefa9e1c9028fa54df_tnj38w.jpg"
               className="more-like-images"
             />
-            
           </div>
         </div>
-       <Footer/>
+        <Footer />
       </div>
     </>
   );
